@@ -14,7 +14,12 @@ let arregloCosas = [
     3*2,
     function(){},
     ()=>{},
-    { a :1 }
+    { a :1 },
+    ['X', 'Megaman','Zero','Dr. Light',[
+        'Will Smit',
+        'JonyB',
+        9090,
+    ]]
 ]
 
-console.log( {arregloCosas} );
+console.log( arregloCosas[7][4][2] );

@@ -1,4 +1,4 @@
-let personaje = {
+const personaje = {
     nombre : 'Juanito',
     codeName : 9898,
     vivo : false ,
@@ -32,3 +32,29 @@ const x = 'vivo'
 console.log('Vivo' , personaje[x] );
 
 console.log('Ultima pelicula' , personaje["ultima-pelicula"] );
+//Mas detalles
+
+delete personaje.edad ; 
+
+console.log(personaje);
+
+personaje.casado = true ; 
+
+const entriePAres = Object.entries(personaje);
+console.log(entriePAres);
+
+console.log(personaje);
+
+Object.freeze(personaje);
+personaje.dinero = 25000;
+personaje.casado = false;
+personaje.direccion.ubicacion = 'Costa de Marfil';// solo afecta al objeto los que esten dentro no
+
+console.log(personaje);
+
+const propiedades = Object.getOwnPropertyNames(personaje);
+const valores = Object.values(personaje);
+console.log(propiedades);
+console.log(valores);
+
+

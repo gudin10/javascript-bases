@@ -57,4 +57,3 @@ const valores = Object.values(personaje);
 console.log(propiedades);
 console.log(valores);
 
-

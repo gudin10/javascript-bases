@@ -23,3 +23,19 @@ if( dia === 26 ){
 }else{
     console.log('No es');
 }
+const diaLetras = {
+    0: 'lunes',
+    1: 'martes',
+    2: 'miercoles',
+    3: 'jueves',
+    4: 'viernes',
+    5:'sabado',
+    6:'domingo'
+}
+const diaLetras2 = ['lunes',
+'martes','miercoles','jueves','viernes','sabado','domingo'];
+
+dia = 33;
+console.log(diaLetras[dia] || 'Dia no definido');
+
+//sin usar else if o swithc
